@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Encuesta</h1>
+    <div class="question">
+        <label for="q1">Pregunta 1: ¿Cómo calificarías nuestra atención al cliente?</label><br>
+        <select id="q1">
+            <option value="1">1 - Muy malo</option>
+            <option value="2">2 - Malo</option>
+            <option value="3">3 - Regular</option>
+            <option value="4">4 - Bueno</option>
+            <option value="5">5 - Muy bueno</option>
+        </select>
+    </div>
+    <div class="question">
+        <label for="q2">Pregunta 2: ¿Qué tan satisfecho estás con nuestros productos?</label><br>
+        <select id="q2">
+            <option value="1">1 - Muy insatisfecho</option>
+            <option value="2">2 - Insatisfecho</option>
+            <option value="3">3 - Neutral</option>
+            <option value="4">4 - Satisfecho</option>
+            <option value="5">5 - Muy satisfecho</option>
+        </select>
+    </div>
+    <div class="question">
+        <label for="q3">Pregunta 3: ¿Recomendarías nuestros servicios a otros?</label><br>
+        <select id="q3">
+            <option value="1">1 - Definitivamente no</option>
+            <option value="2">2 - Probablemente no</option>
+            <option value="3">3 - No estoy seguro</option>
+            <option value="4">4 - Probablemente sí</option>
+            <option value="5">5 - Definitivamente sí</option>
+        </select>
+    </div>
+    <div class="question">
+        <label for="q4">Pregunta 4: ¿Cómo calificarías nuestra página web?</label><br>
+        <select id="q4">
+            <option value="1">1 - Muy malo</option>
+            <option value="2">2 - Malo</option>
+            <option value="3">3 - Regular</option>
+            <option value="4">4 - Bueno</option>
+            <option value="5">5 - Muy bueno</option>
+        </select>
+    </div>
+    <div class="question">
+        <label for="q5">Pregunta 5: ¿Cómo calificarías nuestra aplicación móvil?</label><br>
+        <select id="q5">
+            <option value="1">1 - Muy malo</option>
+            <option value="2">2 - Malo</option>
+            <option value="3">3 - Regular</option>
+            <option value="4">4 - Bueno</option>
+            <option value="5">5 - Muy bueno</option>
+        </select>
+    </div>
+    <button onclick="mostrarResultados()">Enviar</button>
+    <div class="result">
+        <canvas id="resultChart" width="400" height="200"></canvas>
+    </div>
+    <div id="qrCode"></div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
